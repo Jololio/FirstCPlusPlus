@@ -32,7 +32,7 @@ void FirstController :: specialOutput()
     cout << name;
     cout << "Type your name and age" << endl;
     cin >> name >> age;
-    cout << "yout typed " << name << " and " << age << endl;
+    cout << "you typed " << name << " and " << age << endl;
     cout << "Type in your full name" << endl;
     cin.ignore();
     getline(cin, name);
