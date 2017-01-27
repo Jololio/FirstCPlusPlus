@@ -14,8 +14,24 @@ using namespace std;
 void FirstController :: start()
 {
     cout << "words here please :D" << endl;
-    specialOutput();
-    secondaryOutput();
+    
+    int myNumber = 9;
+    int * numberPointer = &myNumber;
+    cout << "Starting with" << myNumber << endl;
+    useNumbers(myNumber);
+    cout << "Look no change XD: " << myNumber << endl;
+    cout << "Changing a value" << endl;
+    myNumber = impactNumber();
+    cout << "See - impacted " << myNumber << endl;
+    cout << "Changing with a pointer: " << endl;
+    usePointerToChange(numberPointer);
+    cout << "See how the number has been changed: " << myNumber << endl;
+    
+}
+
+void FirstController :: usePointerToChange(int * pointedTo)
+{
+    *pointedTo = 2 * (1230985);
 }
 
 void FirstController :: specialOutput()
@@ -52,3 +68,14 @@ void FirstController :: secondaryOutput()
     
 }
 
+void FirstController :: useNumbers(int suppliedNumber)
+{
+    cout << "I was fiven: " << suppliedNumber << endl;
+    suppliedNumber = (suppliedNumber * 3 + 3242) / 42;
+    cout << "It is now: " << suppliedNumber << endl;
+}
+
+int FirstController :: impactNumber()
+{
+    return 8765432;
+}

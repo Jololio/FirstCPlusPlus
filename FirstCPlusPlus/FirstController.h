@@ -15,6 +15,9 @@ class FirstController
 private:
     void specialOutput();
     void secondaryOutput();
+    void useNumbers(int suppliedNumber);
+    int impactNumber();
+    void usePointerToChange(int * somePointer);
 public:
     void start();
 };
