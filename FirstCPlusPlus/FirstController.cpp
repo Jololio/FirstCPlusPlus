@@ -15,6 +15,7 @@ void FirstController :: start()
 {
     cout << "words here please :D" << endl;
     specialOutput();
+    secondaryOutput();
 }
 
 void FirstController :: specialOutput()
@@ -40,3 +41,14 @@ void FirstController :: specialOutput()
     
     
 }
+
+void FirstController :: secondaryOutput()
+{
+    cout << "Good strings my dude" << endl;
+    cout << "Yo is this string good???" << endl;
+    string userResponse1;
+    cin >> userResponse1;
+    cout << "Well that's sick dude" << endl;
+    
+}
+

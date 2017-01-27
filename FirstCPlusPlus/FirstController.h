@@ -14,6 +14,7 @@ class FirstController
 {
 private:
     void specialOutput();
+    void secondaryOutput();
 public:
     void start();
 };
