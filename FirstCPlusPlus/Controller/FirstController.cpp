@@ -6,6 +6,7 @@
 //  Copyright © 2017 Alabudi, Joseph. All rights reserved.
 //
 
+#include "../Model/Timer.hpp"
 #include <iostream>
 #include "FirstController.h"
 
@@ -13,19 +14,34 @@ using namespace std;
 
 void FirstController :: start()
 {
+    Timer afternoonTime;
+    afternoonTime.startTime();
+    
+    
     cout << "words here please :D" << endl;
     
     int myNumber = 9;
     int * numberPointer = &myNumber;
+    
+    
     cout << "Starting with" << myNumber << endl;
     useNumbers(myNumber);
     cout << "Look no change XD: " << myNumber << endl;
     cout << "Changing a value" << endl;
     myNumber = impactNumber();
     cout << "See - impacted " << myNumber << endl;
+    
+    int derpy;
+    cin >> derpy;
+    
+    cout << derpy << endl;
+    
     cout << "Changing with a pointer: " << endl;
     usePointerToChange(numberPointer);
     cout << "See how the number has been changed: " << myNumber << endl;
+    
+    afternoonTimer.finishTimer();
+    afternoonTimer.displayTimerInformation();
     
 }
 
