@@ -15,7 +15,7 @@ using namespace std;
 void FirstController :: start()
 {
     Timer afternoonTime;
-    afternoonTime.startTime();
+    afternoonTime.startTimer();
     
     
     cout << "words here please :D" << endl;
@@ -40,8 +40,8 @@ void FirstController :: start()
     usePointerToChange(numberPointer);
     cout << "See how the number has been changed: " << myNumber << endl;
     
-    afternoonTimer.finishTimer();
-    afternoonTimer.displayTimerInformation();
+    afternoonTime.finishTimer();
+    afternoonTime.displayTimerInformation();
     
 }
 
